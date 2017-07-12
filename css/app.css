@@ -7672,6 +7672,18 @@ button.close {
   }
 }
 
+.btn-primary {
+  background-color: white;
+  color: black;
+  border-color: #666;
+}
+
+.btn-primary:hover {
+  background-color: #222;
+  color: white;
+  border-color: black;
+}
+
 #is_loaded {
   opacity: 0;
   transition: all .3s ease-in-out;
