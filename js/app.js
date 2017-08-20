@@ -14315,19 +14315,8 @@ module.exports = yeast;
 /* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var CB = __webpack_require__(52);
-window.$ = window.jQuery = __webpack_require__(21);
-var lettering = __webpack_require__(69);
-var textillate = __webpack_require__(77);
-var slick = __webpack_require__(71);
-
-var cloudboost = [{
-  'appid': 'ahelfvqmeinp',
-  'pubkey': '596c7f0c-ac96-441a-90b6-3a1586a963c6'
-}];
-
-// cloudboost login
-CB.CloudApp.init(cloudboost[0].appid, cloudboost[0].pubkey);
+__webpack_require__(87);
+__webpack_require__(88);
 
 $(window).on('load', function () {
 
@@ -14335,7 +14324,10 @@ $(window).on('load', function () {
 
   // slick slider
   $('body').find('.slick-init').each(function () {
-    $(this).slick();
+    $(this).slick({
+      lazyLoad: 'ondemand',
+      lazyLoadBuffer: 0
+    });
   });
 
   // aesthetics on
@@ -47437,6 +47429,34 @@ module.exports = __webpack_amd_options__;
 
 module.exports = __webpack_require__(27);
 
+
+/***/ }),
+/* 84 */,
+/* 85 */,
+/* 86 */,
+/* 87 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var CB = __webpack_require__(52);
+window.$ = window.jQuery = __webpack_require__(21);
+var lettering = __webpack_require__(69);
+var textillate = __webpack_require__(77);
+var slick = __webpack_require__(71);
+
+/***/ }),
+/* 88 */
+/***/ (function(module, exports) {
+
+var cloudboost = [{
+  'appid': 'ahelfvqmeinp',
+  'pubkey': '596c7f0c-ac96-441a-90b6-3a1586a963c6'
+}];
+
+// cloudboost login
+CB.CloudApp.init(cloudboost[0].appid, cloudboost[0].pubkey);
+
+// bring hartes
+console.log('hartes!');
 
 /***/ })
 /******/ ]);
