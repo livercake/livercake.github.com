@@ -7709,9 +7709,11 @@ body {
 .liverlogo {
   fill: white;
   display: block;
-  width: 25vw;
+  width: 50vw;
   height: auto;
-  margin: 20vh auto 15px;
+  margin: 25vh auto 20vh;
+  -webkit-transform: scale(0.42);
+          transform: scale(0.42);
 }
 
 video {
