@@ -13832,3 +13832,10 @@ video {
 .social-buttons {
   text-align: center;
 }
+
+.social-buttons .btn {
+  border-radius: 100%;
+  padding: 5px;
+  text-align: center;
+  width: 25px;
+}
