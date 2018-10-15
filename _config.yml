@@ -1,0 +1,18 @@
+# --- General options --- #
+
+# url is the full website URL
+# baseurl is the website's URL without the hostname
+
+# If you are building a simple GitHub user page (https://username.github.io) then use these settings:
+url: "https://livercake.github.io"
+baseurl: ""
+
+# Name of website
+title: livercake says hello world!
+bio: "livercake es felipe parada desde santiago de chile"
+
+# Short description of your site
+description: livercake is felipe parada from santiago, chile
+
+kramdown:
+  input: GFM

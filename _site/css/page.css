@@ -1,0 +1,42 @@
+.page-pageContent {
+	background-color: rgba(0,0,0,.77);
+	color: white;
+	padding: 60px 30px;
+	margin: 120px 0;
+	max-width: 960px;
+	border-radius: 30px;
+	border: 3px solid black;
+}
+
+.page-pageContent__title {
+	margin: 0 0 60px;
+	font-family: 'Abril Fatface';
+}
+
+.page-pageContent__title h1 {
+	font-size: 56px;
+	margin: 0 0 15px;
+}
+
+.page-pageContent__title small {
+	font-family: 'Work Sans';
+	font-size: 21px;
+	font-weight: 700;
+}
+
+.page-pageContent__body {
+	
+}
+
+.page-pageContent__body .page-content a {
+	color: white;
+	text-decoration: none;
+	font-weight: 700;
+	border-bottom: 1px dotted white;
+	padding-bottom: 3px;
+}
+
+.page-pageContent__body .page-comments {
+	max-width: 460px;
+	margin: 60px 0 0;
+}

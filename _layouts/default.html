@@ -1,0 +1,44 @@
+---
+# liverblog - singlePage
+comments: true
+---
+
+{% include header.html %}
+	
+	<div class="hero-page">
+		{% include hero.html %}
+	</div>
+
+	<div class="container">
+		<div class="page-pageContent">
+			<div class="page-pageContent__title">
+				<h1>{{ page.title }}</h1>
+				<small>{{ page.excerpt }}</small>
+			</div>
+
+			<div class="page-pageContent__body">
+				<div class="page-content">
+					{{ content }}
+				</div>
+				<div class="page-comments">
+						
+						<div id="disqus_thread"></div>
+						<script>
+							var disqus_config = function () {
+							this.page.url = "{{site.url}}{{page.url}}";
+							this.page.identifier = "{{site.url}}";
+							};
+						(function() {
+						var d = document, s = d.createElement('script');
+						s.src = 'https://liverblog.disqus.com/embed.js';
+						s.setAttribute('data-timestamp', +new Date());
+						(d.head || d.body).appendChild(s);
+						})();
+						</script>
+						<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% include footer.html %}
