@@ -4,6 +4,9 @@
     <link rel="stylesheet" href="/css/app.css">
   </head>
   <body>
+    
+    <!-- open vue wrapper - closes in footer -->
+    <div id="app">
 
   <video poster="/img/nebula_bg_frame.jpg" id="nebula" playsinline autoplay muted loop>
   <source src="/img/nebula_bg.webm" type="video/webm">
@@ -45,18 +48,12 @@
       </ol>
   </div>
 
-  <div class="container text-center">
-  <div class="index-colophon">
-    <img class="index-colophon_avatar" src="https://i.imgur.com/v89NkjZ.jpg" alt="this is liver">
-    <div class="index-colophon_description">
-      <small>livercake es</small>
-      <h2>interface designer, frontend developer, bedroom dj</h2>
-      <p>un tipo buena onda haciendo html, css y js desde santiago de chile. node, vue, html, css. porque con eso basta 🤓</p>
-    </div>
-    <!-- <button class="index-colophon_cta">
-      Autobombo / Selfpromotion &nbsp; <i class="fa fa-angle-down"></i>
-    </button> -->
-  </div>
+  <div class="container text-center">  
+  <Colophon 
+    avatar="https://i.imgur.com/v89NkjZ.jpg"
+    bio="interface designer, frontend developer, bedroom dj"
+    description="un tipo buena onda haciendo html, css y js desde santiago de chile. node, vue, html, css. ux, ai, wireframing, y en general – manufactura de amables interfaces para web y mas allá."
+  ></Colophon>
 </div>
 
   
@@ -64,7 +61,12 @@
     <h1>Footer</h1>
   </div> -->
   
+  </div>
+  <!-- end vue wrapper -->
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js"></script>
+  <script src="/js/httpVueLoader.js"></script>
+  <script type="module" src="/js/app.js"></script>
   </body>
 </html>
 

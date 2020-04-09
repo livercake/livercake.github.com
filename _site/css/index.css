@@ -40,12 +40,17 @@
 }
 
 .index-colophon {
-	background-color: white;
+	background-color: rgba(255,255,255,.77);
 	padding: 50px 30px;
 	margin: 120px auto 60px;
 	max-width: 420px;
 	color: black;
 	border-radius: 30px;
+	transition: all .420s ease;
+}
+
+.index-colophon:hover {
+	background-color: white;
 	box-shadow: 0 0 15px rgba(255,255,255,.4);
 }
 
