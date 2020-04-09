@@ -14,7 +14,7 @@
 }
 
 .index-postsList li a:hover {
-	color: rgba(255,255,255,.3);
+	color: rgba(255,255,255,.2);
 }
 
 .index-postsList li a small {
@@ -26,6 +26,7 @@
 }
 
 .index-postsList li a:hover small {
-	transform: translateX(-18px) scale(1.02);
+	transform: translateX(-15%) scale(1.02);
+	font-size: 14px;
 	color: rgba(255,255,255,1);
 }
