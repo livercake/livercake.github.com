@@ -1,13 +1,27 @@
 
-  <!-- <div class="container">
-    <h1>Footer</h1>
-  </div> -->
-  
-  </div>
-  <!-- end vue wrapper -->
+    <!-- <div class="container">
+      <h1>Footer</h1>
+    </div> -->
+    
+    </div>
+    <!-- end vue wrapper -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js"></script>
-  <script src="/js/httpVueLoader.js"></script>
-  <script type="module" src="/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js"></script>
+    <script src="/js/httpVueLoader.js"></script>
+    <script type="module" src="/js/app.js"></script>
+
+    <script>
+      var disqus_config = function () {
+        this.page.url = "{{site.url}}{{page.url}}";
+        this.page.identifier = "{{site.url}}";
+      };
+      (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://liverblog.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+    </script>
+
   </body>
 </html>
