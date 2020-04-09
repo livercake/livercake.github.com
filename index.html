@@ -4,20 +4,25 @@
 
 {% include header.html %}
 
-{% include hero.html %}
+  {% include hero.html %}
 
-<!-- <div class="site-intro text-center">
-  <small>{{site.bio}}</small>
-</div> -->
+  <!-- <div class="site-intro text-center">
+    <small>{{site.bio}}</small>
+  </div> -->
 
-<div class="container">
-    <ol class="index-postsList">
-      {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }} <small>&bull; {{post.excerpt}}</small> </a>
-        </li>
-      {% endfor %}
-    </ol>
-</div>
+  <div class="container">
+      <ol class="index-postsList">
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }} <small>&bull; {{post.excerpt}}</small> </a>
+          </li>
+        {% endfor %}
+      </ol>
+  </div>
 
-{% include footer.html %}
+  {% include colophon.html %}
+
+  {% include footer.html %}
+
+  </body>
+</html>

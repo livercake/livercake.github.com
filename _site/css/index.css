@@ -5,6 +5,14 @@
 	padding: 0;
 }
 
+.index-postsList li {
+	margin-bottom: 30px;
+}
+
+.intex-postsList li:last-of-type {
+	margin-bottom: 0;
+}
+
 .index-postsList li a {
 	color: white;
 	font-size: 26px;
@@ -29,4 +37,50 @@
 	transform: translateX(-15%) scale(1.02);
 	font-size: 14px;
 	color: rgba(255,255,255,1);
+}
+
+.index-colophon {
+	background-color: white;
+	padding: 50px 30px;
+	margin: 120px auto 60px;
+	max-width: 420px;
+	color: black;
+	border-radius: 30px;
+	box-shadow: 0 0 15px rgba(255,255,255,.4);
+}
+
+.index-colophon_avatar {
+	width: 80px;
+	height: auto;
+	margin: 0 auto 30px;
+	border-radius: 50%;
+}
+
+.index-colophon_description > small {
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+.index-colophon_description h2 {
+	margin-bottom: 15px;
+	letter-spacing: -.1rem;
+	font-size: 30px;
+}
+
+.index-colophon_description p {
+	letter-spacing: -.066rem;
+	margin: 0;
+}
+
+.index-colophon_cta {
+	margin-top: 30px;
+	border: none;
+	background-color: transparent;
+	padding: 5px;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.index-colophon_cta:hover {
+	cursor: pointer;
 }

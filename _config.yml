@@ -4,15 +4,16 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
-url: "https://livercake.github.io"
-baseurl: ""
+url: https://livercake.github.io
+baseurl: ''
 
 # Name of website
 title: livercake says hello world!
-bio: "livercake es felipe parada desde santiago de chile"
+bio: interface designer, frontend developer, bedroom dj
+avatar: 'https://i.imgur.com/v89NkjZ.jpg'
 
 # Short description of your site
-description: livercake is felipe parada from santiago, chile
+description: un tipo buena onda haciendo html, css y js desde santiago de chile. node, vue, html, css. porque con eso basta 🤓
 
 kramdown:
   input: GFM
