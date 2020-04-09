@@ -15,12 +15,15 @@
         this.page.url = "{{site.url}}{{page.url}}";
         this.page.identifier = "{{site.url}}";
       };
-      (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://liverblog.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-      })();
+      const disqusContainer = document.getElementById('disqus_thread');
+      if (disqusContainer) {
+        (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://liverblog.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+      }
     </script>
 
   </body>
