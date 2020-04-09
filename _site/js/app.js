@@ -13,6 +13,7 @@ var app = new Vue({
   // dependson httpVueLoader
   components: {
     'Colophon': httpVueLoader('./js/components/Colophon.vue'),
+    'PlayThis': httpVueLoader('./js/components/PlayThis.vue'),
   },
   data: {
     // sample vue data

@@ -77,3 +77,47 @@ video {
   padding: 0;
   list-stype-type: none;
 }
+
+.play-this {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.play-this .title {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+}
+
+.play-this .title small {
+  font-size: 12px;
+  display: block;
+}
+
+.play-this .title i.fa {
+  font-size: 36px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.play-this iframe {
+  transform: scale(.666) translateY(-90px);
+  margin-bottom: -60px;
+}
+
+.play-this .disclaimer {
+  font-size: 10px;
+  transform: translateY(-45px);
+  max-width: 300px;
+  margin: 0 auto 60px;
+  transition: opacity .5s ease-out;
+  opacity: 0;
+}
+
+.play-this .disclaimer i.fa-warning {
+  font-size: 13px;
+  color: yellow;
+}
+
+.play-this:hover .disclaimer {
+  opacity: 1;
+}
