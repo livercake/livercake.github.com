@@ -5,12 +5,12 @@
       <small>dale, liver,</small>
       tócate un tema!
     </h4>
-    <iframe 
-      :src="`https://open.spotify.com/embed/track/${this.$attrs.embed}`" 
-      width="300" 
-      height="380" 
-      frameborder="0" 
-      allowtransparency="true" 
+    <iframe
+      :src="`https://open.spotify.com/embed/track/${this.$attrs.embed}`"
+      width="300"
+      height="380"
+      frameborder="0"
+      allowtransparency="true"
       allow="encrypted-media">
     </iframe>
     <div class="disclaimer text-center">
