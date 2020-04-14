@@ -5,6 +5,7 @@
 
 @import url(index.css);
 @import url(page.css);
+@import url(hobbies.css);
 
 #welcome {
   height: 100vh;
